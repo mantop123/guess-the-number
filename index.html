@@ -3,25 +3,25 @@
 <body>
 <h1>Guess The Number</h1>
 <p>Im thinking of a number between 1 to 100.can you guess it?</p>
-<input type="number" placeholder="Insert Number"id="guess"></input>
+<input type="number" placeholder="Insert Number" id="guess"></input>
 <button onclick="checkguess()">guess</button>
-<p id="Result"></p>
+<p id="result"></p>
 </body>
   <script>
     let secretNumber=Math,floor(Math.random()*100)+1;
     function checkGuess(){
-      let guess = document.getElementById("99").value ; 
+      let guess = document.getElementById("guess").value ; 
       let resultElement = document.getElementById("result");
 
       if(guess == secretNumber)
       {
-result.textContent = "congraz,Betul!!"
+resultElement.textContent = "congraz,Betul!!"
       }
       else if (guess > secretNumber){
-     resultElement.textContent = "Nombor Besar,nombor lebih kecil daripada tekaan anda)
-       else(
-         resultElement.textContent= "Nombor Kecil,nombor lebih besar daripada tekaan anda)
-         
+     resultElement.textContent = "Nombor Besar,nombor lebih kecil daripada tekaan anda;
+      }else(
+         resultElement.textContent= "Nombor Kecil,nombor lebih besar daripada tekaan anda;
+        }
     
      }
   </script>
